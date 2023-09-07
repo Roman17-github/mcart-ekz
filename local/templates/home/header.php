@@ -3,9 +3,8 @@
 <?
 IncludeTemplateLangFile(__FILE__);
 ?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
@@ -127,25 +126,24 @@ IncludeTemplateLangFile(__FILE__);
                                                                                       class="site-menu-toggle js-menu-toggle text-black"><span
                                         class="icon-menu h3"></span></a></div>
                         <? $APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"header-menu", 
-	array(
-		"ALLOW_MULTI_SELECT" => "N",
-		"CHILD_MENU_TYPE" => "left",
-		"DELAY" => "N",
-		"MAX_LEVEL" => "3",
-		"MENU_CACHE_GET_VARS" => array(
-		),
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_TYPE" => "N",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"ROOT_MENU_TYPE" => "top",
-		"USE_EXT" => "Y",
-		"COMPONENT_TEMPLATE" => "header-menu"
-	),
-	false
-); ?>
-                        
+                            "bitrix:menu",
+                            "header-menu",
+                            array(
+                                "ALLOW_MULTI_SELECT" => "N",
+                                "CHILD_MENU_TYPE" => "left",
+                                "DELAY" => "N",
+                                "MAX_LEVEL" => "3",
+                                "MENU_CACHE_GET_VARS" => array(),
+                                "MENU_CACHE_TIME" => "3600",
+                                "MENU_CACHE_TYPE" => "N",
+                                "MENU_CACHE_USE_GROUPS" => "Y",
+                                "ROOT_MENU_TYPE" => "top",
+                                "USE_EXT" => "Y",
+                                "COMPONENT_TEMPLATE" => "header-menu"
+                            ),
+                            false
+                        ); ?>
+
                     </nav>
                 </div>
 
@@ -154,3 +152,13 @@ IncludeTemplateLangFile(__FILE__);
         </div>
     </div>
 </div>
+<? if($APPLICATION->GetCurPage() !== '/') {
+$APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumb-header", array(
+	"COMPONENT_TEMPLATE" => ".default",
+		"START_FROM" => "0",	// Номер пункта, начиная с которого будет построена навигационная цепочка
+		"PATH" => "",	// Путь, для которого будет построена навигационная цепочка (по умолчанию, текущий путь)
+		"SITE_ID" => "s1",	// Cайт (устанавливается в случае многосайтовой версии, когда DOCUMENT_ROOT у сайтов разный)
+	),
+	false
+);
+}

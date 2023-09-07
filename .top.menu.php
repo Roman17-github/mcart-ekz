@@ -23,14 +23,14 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"About", 
-		SITE_DIR."#", 
+		SITE_DIR."/about", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Contact", 
-		SITE_DIR."#", 
+		SITE_DIR."contacts/", 
 		Array(), 
 		Array(), 
 		"" 

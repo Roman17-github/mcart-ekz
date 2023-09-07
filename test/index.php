@@ -18,7 +18,4 @@ while ($a = $res->fetch()) {
     echo '</pre>';
 }
 
-?>
-
-
-<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+?><br><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
