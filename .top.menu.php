@@ -1,4 +1,39 @@
 <?
 $aMenuLinks = Array(
+	Array(
+		"Home", 
+		SITE_DIR."/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Properties", 
+		SITE_DIR."Properties/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Blog", 
+		SITE_DIR."#", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"About", 
+		SITE_DIR."#", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Contact", 
+		SITE_DIR."#", 
+		Array(), 
+		Array(), 
+		"" 
+	)
 );
 ?>

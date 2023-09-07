@@ -1,0 +1,33 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<?
+$aMenuLinks = Array(
+    Array(
+        "Buy",
+        "",
+        Array(),
+        Array(),
+        ""
+    ),
+    Array(
+        "Rent",
+        "",
+        Array(),
+        Array(),
+        ""
+    ),
+    Array(
+        "Lease",
+        "",
+        Array(),
+        Array(),
+        ""
+    ),
+    Array(
+        "Menu",
+        "menu/",
+        Array(),
+        Array(),
+        ""
+    ),
+);
+?>

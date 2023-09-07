@@ -1,28 +1,28 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Home", 
-		SITE_DIR."/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Buy", 
-		SITE_DIR."#", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Rent", 
-		SITE_DIR."#", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"About Us", 
+		SITE_DIR."#", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Privacy Policy", 
+		SITE_DIR."#", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Contact Us", 
+		SITE_DIR."#", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Terms", 
 		SITE_DIR."#", 
 		Array(), 
 		Array(), 
